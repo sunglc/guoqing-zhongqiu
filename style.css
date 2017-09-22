@@ -1,0 +1,237 @@
+body{
+	margin: 0;
+	padding: 0;
+	font: normal 62.5%;
+}
+a{
+	display: block;
+}
+table{
+	border-collapse: collapse;
+}
+/*main*/
+.glc-main{
+	min-width: 1200px;
+	font-family: "微软雅黑";
+	background-color: #f84752;
+}
+/*解释文字*/
+.glc-exp{
+	z-index: 1;
+	width: 54.6815%;
+	left: 24.5%;
+	font-weight: 600;
+	font-size: 1.1vw;
+	line-height: 45px;
+	color: white;
+	position: absolute;
+}
+/*banner*/
+.glc-banner{
+	min-width: 1200px;
+	position: relative;
+}
+/*bannertu */
+.glc-bannerImg{
+	width: 100%;
+}
+/*气球一*/
+.balloon{
+	position: absolute;
+	width: 3.9%;
+	top: 80%;
+	left: 85.4%;
+	transform: scale(0.5);
+	transform: rotate(-15deg);
+	animation: rise 5s linear 1 forwards;
+}
+@keyframes rise{
+	form{top:80%;transform: scale(0.5);}
+	to{top:8%;transform: scale(1);transform: rotate(0deg);}
+}
+/*气球二*/
+.balloon2{
+	position: absolute;
+	z-index: 3;
+	width: 5.72%;
+	top: 75%;
+	left:80%;
+	transform: scale(0.5);
+	transform: rotate(-26deg);
+	animation: riseT 5s linear 1 forwards;
+}
+@keyframes riseT{
+	form{top:75%;transform: scale(0.5);}
+	to{top:30%;transform: scale(1);transform: rotate(0deg);}
+}
+/*气球三*/
+.balloon3{
+	position: absolute;
+	width: 5.2%;
+	top:30%;
+	left:11.65%;
+	transform: scale(0.5);
+	transform: rotate(-5deg);
+	animation: riseTh 5s linear 1 forwards;
+}
+@keyframes riseTh{
+	form{top:30%;transform: scale(0.5);}
+	to{top:17.61%;transform: scale(1);transform: rotate(0deg);}
+}
+/*红旗*/
+.flag{
+	position: absolute;
+	width: 1%;
+	top: 72.8%;
+	opacity: 0;
+	animation: showF 1.2s ease-in-out infinite forwards;
+}
+@keyframes showF{
+	form{opacity: 0;}
+	to{opacity: 1;}
+}
+.flagA{
+	left: 67.26%;
+}
+.flagB{
+	left: 70%;
+}
+.flagC{
+	left: 72.5%;
+}
+.flagD{
+	left: 75.3%;
+}
+.flagE{
+	left: 23.4%;
+	transform: rotateY(180deg);
+}
+.flagF{
+	left: 26.3%;
+	transform: rotateY(180deg);
+}
+.flagG{
+	left: 28.94%;
+	transform: rotateY(180deg);
+}
+.flagH{
+	left: 31.55%;
+	transform: rotateY(180deg);
+}
+.flagI{
+	width: 4%;
+	left: 30.3%;
+	top: 54%;
+	transform: rotateY(180deg);
+}
+/*嫦娥*/
+.change{
+	position: absolute;
+	width: 11.45%;
+	top: 70%;
+	left: 5%;
+	transform: scale(0.2);
+	animation: moveC 4s linear 1 forwards;
+}
+@keyframes moveC{
+	0%{top: 65%;left: 10%;transform: scale(0.2);opacity: 0;}
+	50%{top: 57%;left: 26.5%;transform: scale(0.5);opacity: 0.5;}
+	100%{top: 49%;left: 43%;transform: scale(1);opacity: 1;}
+}
+/*center*/
+.glc-center{
+	min-width: 1200px;
+	margin-top: -5px;
+	position: relative;
+}
+/*center背景图*/
+.glc-centerImg{
+	width: 100%;
+}
+/*兔子*/
+.rLeft{
+	position: absolute;
+	width: 16.25%;
+	top: 38%;
+	left: 23.95%;
+}
+.rCenter{
+	position: absolute;
+	width: 16.25%;
+	top: 38%;
+	left: 44.27%;
+}
+.rRight{
+	position: absolute;
+	width: 16.25%;
+	top: 38%;
+	left: 64.06%;
+}
+/*眼睛*/
+.glc-eye{
+	position: absolute;
+	z-index: 999;
+	width: 0.9%;
+	opacity: 0;
+	transform: rotate(40deg);
+	animation: showEye 0.8s ease infinite alternate;
+}
+@keyframes showEye{
+	form{opacity: 0;}
+	to{opacity: 1;}
+}
+.eye1{
+	left: 31.7%;
+	top: 46.5%;
+}
+.eye2{
+	left: 52.3%;
+	top: 46%;
+}
+.eye3{
+	left: 72%;
+	top: 46.2%;
+}
+/*中部的文字*/
+.exp-center{
+	top:23%;
+}
+/*footer*/
+.glc-footer{
+	min-width: 1200px;
+	margin-top: -4px;
+	position: relative;
+	width: 100%;
+}
+/*下部的文字*/
+.exp-One{
+	position: absolute;
+	margin-top:12.66%;
+}
+.exp-two{
+	left: 0;
+	position: absolute;
+	margin-top: 53%;
+}
+.exp-three{
+	left: 0;
+	position: absolute;
+	margin-top: 83%;
+}
+@media screen and (max-width: 1024px){
+	.glc-exp{
+		font-size: 15px;
+	}
+	.exp-three{
+		margin-top: 79%;
+	}
+}
+@media screen and (max-width: 800px){
+	.glc-exp{
+		font-size: 15px;
+		line-height: 30px;
+	}
+	.bottom2{
+		margin-top: 50px;
+	}
+}
